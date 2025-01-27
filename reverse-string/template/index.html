@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse String</title>    
+    <title>Palabra Invertida</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Si deseas agregar estilos -->
 </head>
 <body>
-<script src="script.js"></script>
+    <h1>Palabra Invertida</h1>
+    <p>Introduce una palabra o frase, y el sistema invertirá los caracteres para ti.</p>
+
+    <form id="invertForm">
+        <label for="inputText">Ingresa el texto:</label>
+        <textarea id="inputText" rows="4" cols="50" placeholder="Escribe algo aquí..."></textarea><br><br>
+
+        <button type="button" onclick="invertirTexto()">Invertir</button><br><br>
+
+        <label for="outputText">Resultado:</label>
+        <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
